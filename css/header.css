@@ -5,7 +5,45 @@
    
 }
 
+.header{
+    margin-top: 50px;
+}
+
 .header__top{
+    margin-bottom: 20px;
+    display: flex;
+}
+
+
+.menu__list{
+    font-size: 20px;
+    gap: 30px;
+    display: flex;
+}
+
+.menu__item{
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.phone{
+    font-size: 16px;
+    line-height: 16px;
+    margin-left: 400px;
+    
+}
+
+
+.time{
+    display: block;
+}
+
+.header__bottom{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sub-menu__list{
     display: flex;
 }
 
