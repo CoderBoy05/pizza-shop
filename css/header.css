@@ -30,7 +30,7 @@
     font-size: 16px;
     line-height: 16px;
     margin-left: 400px;
-    
+    text-align: right;
 }
 
 
@@ -40,12 +40,52 @@
 
 .header__bottom{
     display: flex;
-    justify-content: space-between;
+    gap: 150px;
+    margin-bottom: 25px;
+}
+
+.header__sub-menu{
+    line-height: 20px;
+    font-size: 16px;
+    display: flex;
+    gap: 100px;
+    
 }
 
 .sub-menu__list{
     display: flex;
+    gap: 40px;
 }
+
+
+
+.search__button{
+    background: scroll;
+}
+
+.line{
+    background-color: black;
+    width: 2px;
+    height: 35px;
+}
+
+.header__right{
+    display: flex;
+    gap: 30px;
+    
+}
+
+.bottom__img{
+    margin-bottom: 150px;
+}
+
+
+
+
+
+
+
+
 
 
 
