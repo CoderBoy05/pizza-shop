@@ -1,17 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pizza-Shop</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__top">
+          <div class="logo">
+            <img src="img/logo.svg" alt="" />
+          </div>
+          <nav class="header__menu menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <select class="menu__select">
+                  <option value="">Краснодар</option>
+                  <option value="">Махачкала</option>
+                  <option value="">Ростов</option>
+                  <option value="">Дребент</option>
+                  <option value="">Москва</option>
+                </select>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link"> Акции </a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link"> О нас </a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link"> Доставка </a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link"> Контакты </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="phone">
+            <a href="#" class="number">8 (999) 000-99-99</a>
+            <span> Прием заказов с 9:00 до 23:00 </span>
+          </div>
+        </div>
+
+        <div class="header__bottom">
+          <nav class="header__sub-menu sub-menu">
+            <ul class="sub-menu__list">
+              <li class="sub-menu__item">
+                <a href="#" class="sub-menu__link">Комбо наборы</a>
+              </li>
+              <li class="sub-menu__item">
+                <a href="#" class="sub-menu__link">Пицца</a>
+              </li>
+              <li class="sub-menu__item">
+                <a href="#" class="sub-menu__link">Роллы</a>
+              </li>
+              <li class="sub-menu__item">
+                <a href="#" class="sub-menu__link">Суши </a>
+              </li>
+              <li class="sub-menu__item">
+                <a href="#" class="sub-menu__link">Сеты</a>
+              </li>
+              <li class="sub-menu__item">
+                <a href="#" class="sub-menu__link">Вок и закуски</a>
+              </li>
+              <li class="sub-menu__item">
+                <a href="#" class="sub-menu__link">Салаты</a>
+              </li>
+              <li class="sub-menu__item">
+                <a href="#" class="sub-menu__link">Десерты</a>
+              </li>
+              <li class="sub-menu__item">
+                <a href="#" class="sub-menu__link">Напитки</a>
+              </li>
+              <li class="sub-menu__item">
+                <a href="#" class="sub-menu__link">Дополнительно</a>
+              </li>
+            </ul>
+            <div class="search">
+              <button class="search__button">
+                <img src="img/search.svg" alt="Поиск" />
+              </button>
+            </div>
+          </nav>
+
+          <div class="header__right">
+            <img src="img/shop.jpg" alt="" />
+            <img src="img/User.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </header>
+
     <main class="main">
-        <section class="main-block">
-            <h1>main-block</h1>
-        </section>
+      <section class="main-block">
+        <div class="container">
+          <div class="main-block__swiper swiper">
+            <div class="main-block__wrapper swiper-wrapper">
+              <div class="main-block__slide swiper-slide" style="background-image: url('img/main-block/main-block-bg.jpg')">
+                <h2 class="main-block__title">
+                  <span class="main-block--red">ПИЦЦА В ПОДАРОК—</span>
+                  <span class="main-block--blue"></span>
+                </h4>
+
+                <div class="main-blocl__logo">
+                  <img src="img/main-block/logo.svg" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">Slide 2</div>
+              <div class="wiper-slide">Slide 3</div>
+            </div>
+            <div class="main-block__prev swiper-button-prev"></div>
+            <div class="main-block__next swiper-button-next"></div>
+        </div>
+      </section>
     </main>
-    <script src="js/main.js"></script>
-</body>
+    <script type="module" src="js/main.js"></script>
+  </body>
 </html>
