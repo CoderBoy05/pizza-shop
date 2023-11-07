@@ -1,60 +1,94 @@
-.footer{
+.footer__body {
     margin-top: 100px;
+    padding: 24px 0;
+    border: 2px solid var(--border);
+    border-left: none;
+    border-right: none;
 }
 
-
-.footer__container{
+.footer__container {
     display: flex;
     justify-content: space-between;
 }
 
+.footer-navigation {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+}
 
-.novigation{
+.footer-navigation-menu .menu-list {
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 30px 111px;
+    max-height: 120px;
+    align-items: flex-start;
+}
+
+.footer-navigation-menu__link {
+    color: var(--black);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+}
+
+.footer-navigation-menu__link:hover {
+    text-decoration: underline;
+}
+
+.footer-navigation__title {
     font-size: 20px;
-}
-.footer__menu{
-    margin-top: 20px;
-    
-}
-
-.footer__list{
-    font-size: 20px;
-    line-height: 30px;
-    
+    font-weight: 600;
+    line-height: 16px;
+    color: var(--black);
 }
 
-.number__phone{
-    text-align: center;
+.footer__contacts-data {
     display: flex;
     flex-direction: column;
     align-items: center;
-    line-height: 1.2;
-    font-size: 20px;
+    row-gap: 28px;
 }
 
-.block__second-info{
-    margin-top: 20px;
-    max-width: 180px;
-}
-
-
-.block__three{
+.contacts-data__phone,
+.contacts-data__time {
     display: flex;
     flex-direction: column;
-    font-size: 20px;
+    align-items: center;
+    row-gap: 12px;
+}
+
+.contacts-data__time span {
+    color: var(--black);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 16px;
+}
+
+.footer__stories {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
     align-items: flex-end;
 }
 
-.bludo{
-    margin-top: 25px;
+.stories__info {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 140%;
     max-width: 300px;
-    display: inline-block;
-    text-align: right;
+    text-align: end;
 }
 
-
-.footer__icons{
-    margin-top: 50px;
+.footer__copyright {
+    text-align: center;
+    padding: 12px 0;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
 }
 
-
+.stories__items{
+    display: flex;
+    column-gap: 10px;
+}
