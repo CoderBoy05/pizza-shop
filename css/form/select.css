@@ -1,0 +1,111 @@
+.select {
+    display: none;
+}
+
+.custom-select {
+    position: relative;
+    transition: var(--base-transition);
+}
+
+
+.custom-select.is_active .custom-select__body {
+    display: flex;
+}
+
+.custom-select__header {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: var(--main-color);
+}
+
+.custom-select.is_active .custom-select__header {
+    color: var(--black);
+}
+
+.custom-current {
+    display: inline-block;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    padding-left: 28px;
+    padding-right: 15px;
+    position: relative;
+}
+
+.custom-current::before,
+.custom-current::after {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.custom-current::before {
+    content: url("../../img/header/location.svg");
+    left: 0;
+    width: 24px;
+}
+
+.custom-current::after {
+    content: url("../../img/header/select-arrow.svg");
+    right: 0;
+    width: 7px;
+    transition: var(--base-transition);
+}
+
+.custom-select.is_active .custom-current::after {
+    transform-origin: center center;
+    transform: rotate(180deg) translateY(50%);
+}
+
+.custom-select__body {
+    position: absolute;
+    top: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    width: 120px;
+    max-height: 150px;
+
+    background-color: #fff;
+    border-top: 0;
+    box-shadow: 0px 4px 33px 0px rgba(5, 76, 106, 0.15);
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    transition: var(--select-transition);
+}
+
+.custom-select__body::-webkit-scrollbar {
+    width: 8px;
+}
+
+.custom-select__body::-webkit-scrollbar-track {
+    background: #D9D9D9;
+}
+
+.custom-select__body::-webkit-scrollbar-thumb {
+    border-radius: 12px;
+    border: 8px solid var(--accent);
+}
+
+.custom-select__item {
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 8px;
+    width: 100%;
+    transition: var(--select-transition);
+}
+
+.custom-select__item:hover {
+    background-color: var(--red-accent);
+    color: #fff;
+}

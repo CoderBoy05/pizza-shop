@@ -1,6 +1,8 @@
 import Swiper from "../node_modules/swiper/swiper-bundle.min.mjs";
 import Navigation from "../node_modules/swiper/modules/navigation.min.mjs";
 
+import select from "./select.js";
+
 function initSliders() {
   if (document.querySelector(".swiper")) {
     new Swiper(".swiper", {
@@ -23,3 +25,5 @@ function initSliders() {
 }
 
 initSliders();
+
+select();
